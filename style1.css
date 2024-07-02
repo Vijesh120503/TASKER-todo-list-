@@ -1,0 +1,276 @@
+body{
+    background-color:rgb(235, 222, 222)
+}
+.left img{
+    width: 100px;
+    height: 100px;
+}
+.left-1 img,.left-3 img,.left-2 img,.left-4 img{
+    width: 30px;
+    height: 30px;
+}
+.left-1,.left-3,.left-2,.left-4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.main{
+    overflow: hidden;
+}
+
+.popup ul li img{
+    width: 15px;
+    height: 15px;
+}
+.imgg{
+    width: 15px;
+    height: 15px;
+}
+.popup{
+    display: none;
+}
+.popup ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: -20px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+#username{
+    color: black;
+}
+.left-4{
+    position: absolute;
+    top: 650px;
+}
+.left-4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.left-1 p,.left-3 p,.left-2 p,.left-4 p{
+    font-size: 20px;
+}
+.left-1:hover,.left-3:hover,.left-2:hover{
+    background-color:rgb(180, 179, 179);
+}
+.left{
+    background-color: white;
+    width: 14%;
+    height: 100vh;
+    padding-left: 25px;
+    margin-left: -10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    position: fixed;
+}
+.left-image{
+    padding: 50px;
+}
+.add:hover{
+    background-color: rgb(104, 122, 122);
+    cursor: pointer;
+}
+.top h1{
+    margin-left: 40%;
+}
+.main{
+    display: flex;
+}
+.right{
+    width: 86%;
+    padding-left: 14%;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.top-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-1-left{
+    margin-top: 40px;
+}
+.top-1-right{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+.top-1-right img{
+    width: 20px;
+    height: 20px;
+}
+.top-1-right button{
+    width:70px;
+    height: 35px;
+    background-color: whitesmoke;
+}
+.top-1-right button:hover{
+    background: rgb(180, 179, 179);
+    cursor: pointer;
+}
+
+.middle{
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.middle-flex img{
+    width: 14px;
+    height: 14px;
+}
+.middle-flex{
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    gap: 5px;
+}
+.flex-1 span{
+    width: 2px;
+    height: 40px;
+    background-color: black;
+}
+.flex-1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.flex-2{
+    font-size: 20px;
+}
+.flex-2 h5{
+    text-decoration: none;
+}
+.flex-1 input{
+    width: 20px;
+    height: 30px;
+}
+.edit{
+    height: 25px;
+    width: 25px;
+}
+.delete{
+    height: 30px;
+    width: 30px;
+}
+.edit-delete{
+    display: flex;
+    align-items: center;
+    margin-left:55% ;
+    margin-top: 2%;
+    gap: 10px;
+    position: absolute;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(159, 159, 159);
+    margin-top: 30px;
+    gap: 7px;
+    color: black;
+    border-radius: 10px;
+}
+.add img{
+    width: 20px;
+    height: 20px;
+}
+.task-popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(49, 47, 47);
+    opacity: 0.95;
+    margin-left: -10px;
+    padding-right: 2px;
+    display: none;
+    position: absolute;
+    top: 0;
+    position: fixed;
+}
+.edit-task{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(49, 47, 47);
+    opacity: 0.95;
+    margin-left: -10px;
+    padding-right: 2px;
+    display: none;
+    position: absolute;
+    top: 0;
+    position: fixed;
+}
+.add-task-1,.edit-task-1{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    padding: 5px 0px 20px 20px;
+    border-radius: 10px;
+}
+select{
+    width: 280px;
+}
+input{
+    width: 270px;
+}
+.add-task-1 p{
+    text-align: center;
+}
+.Task-cancel,.edit-cancel{
+    border: 2px solid blue;
+    padding: 5px 10px 5px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.Task-add,.edit-add{
+    border: 2px solid red;
+    padding: 5px 10px 5px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.delete-task-1{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    padding: 5px 0px 20px 45px;
+    border-radius: 10px;
+}
+.delete-task{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(49, 47, 47);
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+    margin-left: -10px;
+    padding-right: -2px;
+    display: none;
+}
+.delete-cancel{
+    border: 2px solid blue;
+    padding: 5px 10px 5px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.delete-delete{
+    border: 2px solid red;
+    padding: 5px 10px 5px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+

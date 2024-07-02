@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="Parent">
+        <div class="main">
+            <div class="left">
+                <img src="images/task.png" alt="">
+            </div>
+            <div class="right">
+                <h2>WELCOME TO TAKSER</h2>
+                <p>Please enter your informations to access your tasks.</p>
+                <div class="box">
+                    <h4>Email</h4>
+                    <input type="email"  id="mail" placeholder="Insert your email">
+                    <p id="maill"></p>
+                    <h4>Password</h4>
+                    <input type="password" id="pass" placeholder="Insert your password"><br>
+                    <div class="box-1">
+                        <input type="checkbox" id="checkbox">
+                        <span>Remember me</span><br>
+                    </div>
+                    <button>Sign In</button>
+                </div>
+                <label>Dont have an account? <b id="signupopen">Sign up</b></label>    
+            </div>
+        </div>
+
+        <div class="signup-popup">
+            <div class="signup">
+                <h1>Register account</h1>
+                <h2>Name</h2>
+                <input type="text" placeholder="Enter your name" id="name">
+                <h2>Email</h2>
+                <input type="email" placeholder="Enter your email" id="email">
+                <h2>Password</h2>
+                <input type="password" placeholder="Enter your password" id="password"><br>
+                <p id="passwordValidation"></p>
+                <button type="button">Signup</button>
+                <p>Already have an account? <span id="loginn">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

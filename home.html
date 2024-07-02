@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="main">
+            <div class="left">
+                <img src="images/task.png" class="left-image" alt="">
+                <h2>Welcome <span id="usernameDisplay"></span></h2>
+                <span id="emailDisplay">
+                <h2 id="username"> </h2>
+                <div class="left-1">
+                    <img src="images/all task.png" alt="">
+                    <p>Tasks</p>
+                </div>
+                <div class="left-2">
+                    <img src="images/categ.jpg" alt="">
+                    <p>Categories</p>
+                    
+                </div>
+                    <div class="popup">
+                        <ul id="popup-list">
+                            <li><img src="images/1.webp" alt="">
+                            <p onclick="CategoryStatus('None')">None</p></li>
+                            <li><img src="images/2.jpg" alt="">
+                            <p onclick="CategoryStatus('Home')">Home</p></li>
+                            <li><img src="images/3.jfif" alt="">
+                            <p onclick="CategoryStatus('School')">School</p></li>
+                            <li><img src="images/4.png" alt="">
+                            <p onclick="CategoryStatus('Shopping list')">Shopping list</p></li>
+                            <li><img src="images/add.png" alt="">
+                            <p class="categAdd">Add new</p></li>
+                        </ul>
+                    </div>
+                <div class="left-3">
+                    <img src="images/settings.png" alt="">
+                    <p>Settings</p>
+                </div>
+                <div class="left-4">
+                    <img src="images/logout.jfif" alt="">
+                    <p><a href="index.html">Logout</a></p>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="top">
+                    <h1>All Your Tasks</h1>
+                </div>
+                <div class="top-1">
+                    <div class="top-1-left">
+                        <h3>Tasks</h3>
+                    </div>
+                    <div class="top-1-right">
+                        <button class="all" onclick="updateTaskStatus('All')">All</button>
+                        <button class="done" onclick="updateTaskStatus('Done')">Done</button>
+                        <button class="not-done" onclick="updateTaskStatus('Not Done')">Not Done</button>
+                        <img src="images/filter.jpg" alt="">
+                    </div>
+                </div>        
+                <div class="add-task">
+                    <div class="add">
+                        <img src="images/add.png" alt="">
+                        <p>Add Task</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="task-popup">
+            <div class="add-task-1">
+                <p>Insert Name</p>
+                <input type="text" placeholder="Enter Task Name">
+                <p>Select Category</p>
+                <select>
+                    <option value="None" class="none">None</option>
+                    <option value="Home" class="Home">Home</option>
+                    <option value="School" class="School">School</option>
+                    <option value="Shopping list" class="Shopping">Shopping list</option>                    
+                </select>
+                <div class="button">
+                    <button class="Task-cancel">Cancel</button>
+                    <button class="Task-add">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-task"> 
+            <div class="edit-task-1">
+                <p>Insert Name</p>
+                <input type="text" placeholder="Enter Task Name">
+                <p>Select Category</p>
+                <select>
+                    <option value="None" class="none">None</option>
+                    <option value="Home" class="Home">Home</option>
+                    <option value="School" class="School">School</option>
+                    <option value="Shopping list" class="Shopping">Shopping list</option>                    
+                </select>
+                <div class="button">
+                    <button class="edit-cancel">Cancel</button>
+                    <button class="edit-add">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="delete-task">
+            <div class="delete-task-1">
+                <p>Are you sure you want to delete task?</p>
+                <button class="delete-cancel">Cancel</button>
+                <button class="delete-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body> 
+</html>

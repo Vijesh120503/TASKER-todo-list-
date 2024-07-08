@@ -4,6 +4,6 @@ Non responsive
 
 Key features 
 1.CRUD Operations
-2.localstorage 
-
+2.Localstorage 
+3.Email and password validation 
 
